@@ -8,16 +8,16 @@ class PlaceChuo(Enum):
         Enum (int): レース場に割り当てられたid
             吉場サイトにアクセスする際のurl中で使用される．
     """
-    Sapporo = 71
-    Hakodate = 72
-    Fukushima = 73
-    Nigata = 74
-    Tokyo = 75
-    Nakayama = 76
-    Tyukyo = 77
-    Kyoto = 78
-    Hanshin = 79
-    Ogura = 80
+    Sapporo = 71#: int: 札幌レース場
+    Hakodate = 72#: int: 函館レース場
+    Fukushima = 73#: int: 福島レース場
+    Nigata = 74#: int: 新潟レース場
+    Tokyo = 75#: int: 東京レース場
+    Nakayama = 76#: int: 中山レース場
+    Tyukyo = 77#: int: 中京レース場
+    Kyoto = 78#: int: 京都レース場
+    Hanshin = 79#: int: 阪神レース場
+    Ogura = 80#: int: 小倉レース場
 
 class Race():
     """レース情報を格納するクラス．
@@ -69,7 +69,7 @@ class Race():
             month (int): 開催月
             day (int): 開催日
             r (int): 何レース目
-            place (int): レース場id
+            place (int): レース場id，詳細は :class:`~scrapekichiba.models.PlaceChuo`
 
         Returns:
             str: レースid
