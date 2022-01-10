@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>scrapekichiba package &mdash; scrapekichiba v1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to scrapekichiba’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> scrapekichiba
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">scrapekichiba package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-scrapekichiba.locators">scrapekichiba.locators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-scrapekichiba.models">scrapekichiba.models module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scrapekichiba-page-module">scrapekichiba.page module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-scrapekichiba">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">scrapekichiba</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>scrapekichiba package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/scrapekichiba.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scrapekichiba-package">
+<h1>scrapekichiba package<a class="headerlink" href="#scrapekichiba-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-scrapekichiba.locators">
+<span id="scrapekichiba-locators-module"></span><h2>scrapekichiba.locators module<a class="headerlink" href="#module-scrapekichiba.locators" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-scrapekichiba.models">
+<span id="scrapekichiba-models-module"></span><h2>scrapekichiba.models module<a class="headerlink" href="#module-scrapekichiba.models" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scrapekichiba.models.</span></span><span class="sig-name descname"><span class="pre">PlaceChuo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scrapekichiba.models.PlaceChuo" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>中央競馬における各レース場のid</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Enum</strong> (<em>int</em>) – レース場に割り当てられたid
+吉場サイトにアクセスする際のurl中で使用される．</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Fukushima">
+<span class="sig-name descname"><span class="pre">Fukushima</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">73</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Fukushima" title="Permalink to this definition"></a></dt>
+<dd><p>福島レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Hakodate">
+<span class="sig-name descname"><span class="pre">Hakodate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">72</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Hakodate" title="Permalink to this definition"></a></dt>
+<dd><p>函館レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Hanshin">
+<span class="sig-name descname"><span class="pre">Hanshin</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">79</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Hanshin" title="Permalink to this definition"></a></dt>
+<dd><p>阪神レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Kyoto">
+<span class="sig-name descname"><span class="pre">Kyoto</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">78</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Kyoto" title="Permalink to this definition"></a></dt>
+<dd><p>京都レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Nakayama">
+<span class="sig-name descname"><span class="pre">Nakayama</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">76</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Nakayama" title="Permalink to this definition"></a></dt>
+<dd><p>中山レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Nigata">
+<span class="sig-name descname"><span class="pre">Nigata</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">74</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Nigata" title="Permalink to this definition"></a></dt>
+<dd><p>新潟レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Ogura">
+<span class="sig-name descname"><span class="pre">Ogura</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">80</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Ogura" title="Permalink to this definition"></a></dt>
+<dd><p>小倉レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Sapporo">
+<span class="sig-name descname"><span class="pre">Sapporo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">71</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Sapporo" title="Permalink to this definition"></a></dt>
+<dd><p>札幌レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Tokyo">
+<span class="sig-name descname"><span class="pre">Tokyo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">75</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Tokyo" title="Permalink to this definition"></a></dt>
+<dd><p>東京レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.PlaceChuo.Tyukyo">
+<span class="sig-name descname"><span class="pre">Tyukyo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">77</span></em><a class="headerlink" href="#scrapekichiba.models.PlaceChuo.Tyukyo" title="Permalink to this definition"></a></dt>
+<dd><p>中京レース場</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">scrapekichiba.models.</span></span><span class="sig-name descname"><span class="pre">Race</span></span><a class="headerlink" href="#scrapekichiba.models.Race" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>レース情報を格納するクラス．</p>
+<p>あるレースのid，開催年月日，何レース目か，レース場idを格納する．
+また，idから上記パラメータ．パラメータからidの変換も行う．</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.day">
+<span class="sig-name descname"><span class="pre">day</span></span><a class="headerlink" href="#scrapekichiba.models.Race.day" title="Permalink to this definition"></a></dt>
+<dd><p>開催日</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.from_id">
+<span class="sig-name descname"><span class="pre">from_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scrapekichiba.models.Race.from_id" title="Permalink to this definition"></a></dt>
+<dd><p>レースidから開催年月日，何レース目，レース場idを抽出し，propertyに保存する．</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – レースid</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – idのフォーマットが誤っている可能性がある場合に投げられる．</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Race</span><span class="p">()</span><span class="o">.</span><span class="n">from_id</span><span class="p">(</span><span class="s1">&#39;202201100776&#39;</span><span class="p">)</span>
+<span class="go">(2022, 1, 10, 7, 76)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.from_param">
+<span class="sig-name descname"><span class="pre">from_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">year</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">month</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">day</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">place</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scrapekichiba.models.Race.from_param" title="Permalink to this definition"></a></dt>
+<dd><p>レースの開催年月日，何レース目か，レース場idからレースidを生成する．</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>year</strong> (<em>int</em>) – 開催年</p></li>
+<li><p><strong>month</strong> (<em>int</em>) – 開催月</p></li>
+<li><p><strong>day</strong> (<em>int</em>) – 開催日</p></li>
+<li><p><strong>r</strong> (<em>int</em>) – 何レース目</p></li>
+<li><p><strong>place</strong> (<em>int</em>) – レース場id，詳細は <a class="reference internal" href="#scrapekichiba.models.PlaceChuo" title="scrapekichiba.models.PlaceChuo"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlaceChuo</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>レースid</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Race</span><span class="p">()</span><span class="o">.</span><span class="n">from_param</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">76</span><span class="p">)</span>
+<span class="go">&#39;202201100776&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#scrapekichiba.models.Race.id" title="Permalink to this definition"></a></dt>
+<dd><p>レース場id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.month">
+<span class="sig-name descname"><span class="pre">month</span></span><a class="headerlink" href="#scrapekichiba.models.Race.month" title="Permalink to this definition"></a></dt>
+<dd><p>開催月</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.place">
+<span class="sig-name descname"><span class="pre">place</span></span><a class="headerlink" href="#scrapekichiba.models.Race.place" title="Permalink to this definition"></a></dt>
+<dd><p>レース場id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.r">
+<span class="sig-name descname"><span class="pre">r</span></span><a class="headerlink" href="#scrapekichiba.models.Race.r" title="Permalink to this definition"></a></dt>
+<dd><p>何レース目か</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="scrapekichiba.models.Race.year">
+<span class="sig-name descname"><span class="pre">year</span></span><a class="headerlink" href="#scrapekichiba.models.Race.year" title="Permalink to this definition"></a></dt>
+<dd><p>開催年</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="scrapekichiba-page-module">
+<h2>scrapekichiba.page module<a class="headerlink" href="#scrapekichiba-page-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-scrapekichiba">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-scrapekichiba" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to scrapekichiba’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, melonTai.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
